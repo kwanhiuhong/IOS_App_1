@@ -12,6 +12,7 @@
 		F6BE5C3C22ED77E200EB7A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BE5C3A22ED77E200EB7A56 /* Main.storyboard */; };
 		F6BE5C3E22ED77E600EB7A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BE5C3D22ED77E600EB7A56 /* Assets.xcassets */; };
 		F6BE5C4122ED77E600EB7A56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BE5C3F22ED77E600EB7A56 /* LaunchScreen.storyboard */; };
+		F6D1123322EF2BE8004AD231 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = F6D1123222EF2BE8004AD231 /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F6BE5C3D22ED77E600EB7A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6BE5C4022ED77E600EB7A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6BE5C4222ED77E600EB7A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D1123222EF2BE8004AD231 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hustle-on.wav"; path = "hustle-mode-code-assets/assets/Assets/hustle-on.wav"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F6BE5C3522ED77E200EB7A56 /* hustle-mode */ = {
 			isa = PBXGroup;
 			children = (
+				F6D1123222EF2BE8004AD231 /* hustle-on.wav */,
 				F6BE5C3622ED77E200EB7A56 /* AppDelegate.swift */,
 				F6BE5C3822ED77E200EB7A56 /* ViewController.swift */,
 				F6BE5C3A22ED77E200EB7A56 /* Main.storyboard */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D1123322EF2BE8004AD231 /* hustle-on.wav in Resources */,
 				F6BE5C4122ED77E600EB7A56 /* LaunchScreen.storyboard in Resources */,
 				F6BE5C3E22ED77E600EB7A56 /* Assets.xcassets in Resources */,
 				F6BE5C3C22ED77E200EB7A56 /* Main.storyboard in Resources */,
