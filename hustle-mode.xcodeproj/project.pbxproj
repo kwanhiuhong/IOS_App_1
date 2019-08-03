@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65C486C22F570CA00BA9E5F /* App_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F65C486B22F570C900BA9E5F /* App_icon.png */; };
 		F6BE5C3722ED77E200EB7A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5C3622ED77E200EB7A56 /* AppDelegate.swift */; };
 		F6BE5C3922ED77E200EB7A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BE5C3822ED77E200EB7A56 /* ViewController.swift */; };
 		F6BE5C3C22ED77E200EB7A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BE5C3A22ED77E200EB7A56 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F65C486B22F570C900BA9E5F /* App_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_icon.png; sourceTree = SOURCE_ROOT; };
 		F6BE5C3322ED77E200EB7A56 /* hustle-mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hustle-mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BE5C3622ED77E200EB7A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BE5C3822ED77E200EB7A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F6BE5C3D22ED77E600EB7A56 /* Assets.xcassets */,
 				F6BE5C3F22ED77E600EB7A56 /* LaunchScreen.storyboard */,
 				F6BE5C4222ED77E600EB7A56 /* Info.plist */,
+				F65C486B22F570C900BA9E5F /* App_icon.png */,
 			);
 			path = "hustle-mode";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				F6D1123322EF2BE8004AD231 /* hustle-on.wav in Resources */,
 				F6BE5C4122ED77E600EB7A56 /* LaunchScreen.storyboard in Resources */,
+				F65C486C22F570CA00BA9E5F /* App_icon.png in Resources */,
 				F6BE5C3E22ED77E600EB7A56 /* Assets.xcassets in Resources */,
 				F6BE5C3C22ED77E200EB7A56 /* Main.storyboard in Resources */,
 			);
@@ -286,7 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "hustle-mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Hello-world.hustle-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,7 +310,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "hustle-mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Hello-world.hustle-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
