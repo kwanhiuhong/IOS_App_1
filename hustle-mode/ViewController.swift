@@ -16,12 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var cloudHolder: UIView!
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var HustleOnStack: UIStackView!
-    
+    @IBOutlet weak var playAgainBtn: UIButton!
     var player: AVAudioPlayer!
+    var initialYAxis:CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initialYAxis = self.rocket.frame.minY
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
         do {
@@ -40,10 +41,18 @@ class ViewController: UIViewController {
         player.play()
         
         UIView.animate(withDuration: 2.3, animations: {
-                self.rocket.frame = CGRect(x: 0, y: 20, width: 375, height: 328)
+                self.rocket.frame = CGRect(x: 0, y: 20, width: self.rocket.frame.width, height: 328)
             }) { (finished) in
                 self.HustleOnStack.isHidden = false
             }
+    }
+    @IBAction func palyAgainBtnPressed(_ sender: Any) {
+        self.HustleOnStack.isHidden = true
+        self.cloudHolder.isHidden = true
+        self.darkBlueBG.isHidden = false
+        self.powerBtn.isHidden = false
+        print ("The initial value is : \(self.initialYAxis)")
+        self.rocket.frame = CGRect(x: 0, y: self.initialYAxis, width: self.rocket.frame.width, height: 328)
     }
     
 }

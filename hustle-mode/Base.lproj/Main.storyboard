@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="ptd-9f-cNP">
-                                        <rect key="frame" x="0.0" y="611" width="414" height="328"/>
+                                        <rect key="frame" x="0.0" y="620" width="414" height="328"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="328" id="yHh-N8-HQX"/>
                                         </constraints>
@@ -41,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="419" width="414" height="477"/>
                                     </imageView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uLS-fx-kVU">
-                                        <rect key="frame" x="117.5" y="584" width="179.5" height="147"/>
+                                        <rect key="frame" x="117.5" y="557.5" width="179.5" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hustle Mode: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ya-5O-51o">
                                                 <rect key="frame" x="0.0" y="0.0" width="179.5" height="33.5"/>
@@ -55,10 +55,26 @@
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36S-Bz-5vg">
+                                                <rect key="frame" x="0.0" y="155" width="179.5" height="45"/>
+                                                <color key="backgroundColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <state key="normal" title="Play Again">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="palyAgainBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSj-Gx-Ksj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="179.5" id="YFl-7S-TDG"/>
-                                            <constraint firstAttribute="height" constant="147" id="qlH-3e-ION"/>
+                                            <constraint firstAttribute="height" constant="200" id="qlH-3e-ION"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -67,7 +83,7 @@
                                     <constraint firstItem="ptd-9f-cNP" firstAttribute="leading" secondItem="gSK-6A-bwf" secondAttribute="leading" id="3GH-pe-GlE"/>
                                     <constraint firstAttribute="trailing" secondItem="ptd-9f-cNP" secondAttribute="trailing" id="6ye-i3-sbx"/>
                                     <constraint firstItem="ptd-9f-cNP" firstAttribute="leading" secondItem="IoA-4q-hKd" secondAttribute="leading" id="BYz-rt-LT5"/>
-                                    <constraint firstAttribute="bottom" secondItem="ptd-9f-cNP" secondAttribute="bottom" constant="-43" id="FnF-hW-PR3"/>
+                                    <constraint firstAttribute="bottom" secondItem="ptd-9f-cNP" secondAttribute="bottom" constant="-52" id="FnF-hW-PR3"/>
                                     <constraint firstItem="gSK-6A-bwf" firstAttribute="centerX" secondItem="IoA-4q-hKd" secondAttribute="centerX" id="Skn-kd-px8"/>
                                     <constraint firstItem="ptd-9f-cNP" firstAttribute="centerX" secondItem="IoA-4q-hKd" secondAttribute="centerX" id="ajp-a4-vs8"/>
                                     <constraint firstItem="uLS-fx-kVU" firstAttribute="centerY" secondItem="IoA-4q-hKd" secondAttribute="centerY" constant="209.5" id="dWv-hu-mbG"/>
@@ -100,6 +116,7 @@
                         <outlet property="HustleOnStack" destination="uLS-fx-kVU" id="rWR-Ss-ZQn"/>
                         <outlet property="cloudHolder" destination="IoA-4q-hKd" id="8fy-Y7-d3g"/>
                         <outlet property="darkBlueBG" destination="hhN-pP-PK6" id="epw-Ub-1RR"/>
+                        <outlet property="playAgainBtn" destination="36S-Bz-5vg" id="QZ6-Rh-3j7"/>
                         <outlet property="powerBtn" destination="tl9-9L-daD" id="rLs-OE-DnS"/>
                         <outlet property="rocket" destination="ptd-9f-cNP" id="DpQ-Ug-EZv"/>
                     </connections>
