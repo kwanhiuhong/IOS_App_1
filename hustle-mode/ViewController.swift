@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         player.play()
         
         UIView.animate(withDuration: 2.3, animations: {
-                self.rocket.frame = CGRect(x: 0, y: 20, width: self.rocket.frame.width, height: 328)
+                self.rocket.frame = CGRect(x: 0, y: 200, width: self.rocket.frame.width, height: 328)
             }) { (finished) in
                 self.HustleOnStack.isHidden = false
             }
